@@ -1,6 +1,6 @@
-const sponsership = {
-  name: "sponsership",
-  title: "Sponsership",
+const sponsorship = {
+  name: "sponsorship",
+  title: "Sponsorship",
   type: "document",
   fields: [
     {
@@ -43,4 +43,4 @@ const sponsership = {
   ],
 };
 
-export default sponsership;
+export default sponsorship;

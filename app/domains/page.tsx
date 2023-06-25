@@ -15,13 +15,13 @@ export default async function Domains() {
               Eat . Sleep . Code . Repeat
             </h2>
             <p className="mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-blue-600 via-green-500 to-green-200 inline-block text-transparent bg-clip-text sm:text-4xl">
-              Corporate Domain
+              Corporate
             </p>
             <p className="mt-6 mb-2 text-base leading-7 text-gray-400">
-              In this section, I talk about my experiences as a web development
-              intern and volunteer. I share the cool projects I worked on, the
-              skills I picked up, and the challenges I faced. Check it out to
-              see how I grew as a developer through these awesome opportunities!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, non
+              eius adipisci et soluta officiis placeat consequuntur nisi a
+              obcaecati quo distinctio eum! Non doloribus, culpa sapiente rerum
+              reiciendis voluptatum?
             </p>
           </div>
           <div className="mt-5 w-full min-w-0 flex-1 md:mt-0">

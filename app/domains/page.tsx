@@ -7,7 +7,7 @@ import {
   getSponsorship,
   getWad,
 } from "@/sanity/utils/fetchData";
-import Domain from "./domain";
+import Domain from "./Domain";
 
 export default async function Domains() {
   const corps = await getCorp();

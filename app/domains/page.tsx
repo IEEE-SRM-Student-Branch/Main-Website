@@ -1,9 +1,10 @@
 import { AiFillGithub, AiFillLinkedin, AiOutlineLink } from "react-icons/ai";
 
-import { getCorp } from "@/sanity/utils/fetchData";
+import { getCorp, getWad } from "@/sanity/utils/fetchData";
 
 export default async function Domains() {
-  const domains = await getCorp();
+  const corps = await getCorp();
+  const wads = await getWad();
   return (
     <>
       <div className="bg-blackGradient2 py-20 sm:py-32">
@@ -26,20 +27,20 @@ export default async function Domains() {
           </div>
           <div className="mt-5 w-full min-w-0 flex-1 md:mt-0">
             <dl className="grid grid-cols-1 gap-y-10 gap-x-8 md:max-w-xl lg:max-w-none lg:gap-y-16">
-              {domains.map((domain, key) => (
+              {corps.map((corp, key) => (
                 <div
                   className="relative rounded-lg bg-gray-50 p-10"
-                  key={domain._id}
+                  key={corp._id}
                 >
                   <a
-                    href={domain.gitUrl}
+                    href={corp.gitUrl}
                     target="_blank"
                     className="flex items-center justify-center"
                   >
                     <div className="flex h-28  w-28 items-center justify-center rounded-full">
                       <img
-                        src={domain.image}
-                        alt={domain.name}
+                        src={corp.image}
+                        alt={corp.name}
                         width={100}
                         height={100}
                         className="rounded-full"
@@ -48,19 +49,19 @@ export default async function Domains() {
                   </a>
 
                   <dt className=" mt-4 text-lg font-semibold leading-7 text-gray-900 flex justify-center items-center">
-                    <span>{domain.name}</span>
+                    <span>{corp.name}</span>
                   </dt>
                   <h3 className="text-gray-500  flex justify-center items-center">
-                    <span>{domain.designation}</span>
+                    <span>{corp.designation}</span>
                   </h3>
                   <div className="mt-3 border border-gray-600 rounded-lg p-3 flex justify-between text-base leading-7 text-gray-600 ">
-                    <a href={domain.gitUrl}>
+                    <a href={corp.gitUrl}>
                       <AiFillGithub className="h-7 w-7 hover:scale-105 hover:text-black transition duration-500 ease-in-out" />
                     </a>
-                    <a href={domain.linkedInUrl}>
+                    <a href={corp.linkedInUrl}>
                       <AiFillLinkedin className="h-7 w-7  hover:scale-105 hover:text-black transition duration-500 ease-in-out" />
                     </a>
-                    <a href={domain.portfolioUrl}>
+                    <a href={corp.portfolioUrl}>
                       <AiOutlineLink className="h-7 w-7  hover:scale-105 hover:text-black transition duration-500 ease-in-out" />
                     </a>
                   </div>
@@ -70,7 +71,75 @@ export default async function Domains() {
           </div>
         </div>
 
-        <div className=" h-screen mt-10">{/* other domains go here */}</div>
+        <div className=" h-screen mt-10">
+          {/* other domains go here */}
+          <div className="bg-blackGradient2 py-20 sm:py-32">
+            <div className="h-[5rem]"></div>
+
+            <div className="mx-auto flex max-w-5xl flex-col items-start gap-10 px-6 md:flex-row lg:px-8">
+              <div className="w-full md:sticky md:top-10 md:w-[28rem]">
+                <h2 className="text-lg font-semibold leading-8 tracking-tight text-gray-500">
+                  Eat . Sleep . Code . Repeat
+                </h2>
+                <p className="mt-2 text-3xl font-bold tracking-tight bg-gradient-to-r from-blue-600 via-green-500 to-green-200 inline-block text-transparent bg-clip-text sm:text-4xl">
+                  Web & App Domain 
+                </p>
+                <p className="mt-6 mb-2 text-base leading-7 text-gray-400">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim,
+                  non eius adipisci et soluta officiis placeat consequuntur nisi
+                  a obcaecati quo distinctio eum! Non doloribus, culpa sapiente
+                  rerum reiciendis voluptatum?
+                </p>
+              </div>
+              <div className="mt-5 w-full min-w-0 flex-1 md:mt-0">
+                <dl className="grid grid-cols-1 gap-y-10 gap-x-8 md:max-w-xl lg:max-w-none lg:gap-y-16">
+                  {wads.map((wad, key) => (
+                    <div
+                      className="relative rounded-lg bg-gray-50 p-10"
+                      key={wad._id}
+                    >
+                      <a
+                        href={wad.gitUrl}
+                        target="_blank"
+                        className="flex items-center justify-center"
+                      >
+                        <div className="flex h-28  w-28 items-center justify-center rounded-full">
+                          <img
+                            src={wad.image}
+                            alt={wad.name}
+                            width={100}
+                            height={100}
+                            className="rounded-full"
+                          />
+                        </div>
+                      </a>
+
+                      <dt className=" mt-4 text-lg font-semibold leading-7 text-gray-900 flex justify-center items-center">
+                        <span>{wad.name}</span>
+                      </dt>
+                      <h3 className="text-gray-500  flex justify-center items-center">
+                        <span>{wad.designation}</span>
+                      </h3>
+                      <div className="mt-3 border border-gray-600 rounded-lg p-3 flex justify-between text-base leading-7 text-gray-600 ">
+                        <a href={wad.gitUrl}>
+                          <AiFillGithub className="h-7 w-7 hover:scale-105 hover:text-black transition duration-500 ease-in-out" />
+                        </a>
+                        <a href={wad.linkedInUrl}>
+                          <AiFillLinkedin className="h-7 w-7  hover:scale-105 hover:text-black transition duration-500 ease-in-out" />
+                        </a>
+                        <a href={wad.portfolioUrl}>
+                          <AiOutlineLink className="h-7 w-7  hover:scale-105 hover:text-black transition duration-500 ease-in-out" />
+                        </a>
+                      </div>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+            </div>
+
+            <div className=" h-screen mt-10">{/* other domains go here */}</div>
+          </div>
+        </div>
       </div>
     </>
   );

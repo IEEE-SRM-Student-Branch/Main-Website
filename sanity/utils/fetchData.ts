@@ -4,7 +4,7 @@ import { member } from "@/types/member";
 
 export async function getCorp(): Promise<member[]> {
   return client.fetch(
-    groq`*[_type == "corporate"]{
+    groq`*[_type == "corporate"] | order(_createdAt asc){
         _id,
         _createdAt,
         name,
@@ -18,8 +18,8 @@ export async function getCorp(): Promise<member[]> {
 }
 
 export async function getWad(): Promise<member[]> {
-    return client.fetch(
-      groq`*[_type == "wad"]{
+  return client.fetch(
+    groq`*[_type == "wad"]{
           _id,
           _createdAt,
           name,
@@ -29,8 +29,8 @@ export async function getWad(): Promise<member[]> {
           portfolioUrl,
           "image": image.asset->url
       }`
-    );
-  }
+  );
+}
 
 export async function getAlumini(): Promise<member[]> {
   return client.fetch(

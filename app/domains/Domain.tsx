@@ -32,41 +32,45 @@ export default function Domain({
           <dl className="grid grid-cols-1 gap-y-10 gap-x-8 md:max-w-xl lg:max-w-none lg:gap-y-16">
             {data.map((spon, key) => (
               <div
-                className="relative rounded-lg bg-gray-50 p-10"
+                className="relative rounded-lg bg-gray-50 p-10 flex justify-between items-center space-x-3"
                 key={spon._id}
               >
-                <a
-                  href={spon.gitUrl}
-                  target="_blank"
-                  className="flex items-center justify-center"
-                >
-                  <div className="flex h-28  w-28 items-center justify-center  object-contain">
-                    <img
-                      src={spon.image}
-                      alt={spon.name}
-                      width={100}
-                      height={100}
-                      className=" object-contain"
-                    />
-                  </div>
-                </a>
+                <div>
+                  <a
+                    href={spon.gitUrl}
+                    target="_blank"
+                    className="flex items-center justify-center"
+                  >
+                    <div className="flex items-center justify-center  object-contain">
+                      <img
+                        src={spon.image}
+                        alt={spon.name}
+                        width={200}
+                        height={200}
+                        className=" object-contain rounded-xl"
+                      />
+                    </div>
+                  </a>
+                </div>
 
-                <dt className=" mt-4 text-lg font-semibold leading-7 text-gray-900 flex justify-center items-center">
-                  <span>{spon.name}</span>
-                </dt>
-                <h3 className="text-gray-500  flex justify-center items-center">
-                  <span>{spon.designation}</span>
-                </h3>
-                <div className="mt-3 border border-gray-600 rounded-lg p-3 flex justify-between text-base leading-7 text-gray-600 ">
-                  <a href={spon.gitUrl}>
-                    <AiFillGithub className="h-7 w-7 hover:scale-105 hover:text-black transition duration-500 ease-in-out" />
-                  </a>
-                  <a href={spon.linkedInUrl}>
-                    <AiFillLinkedin className="h-7 w-7  hover:scale-105 hover:text-black transition duration-500 ease-in-out" />
-                  </a>
-                  <a href={spon.portfolioUrl}>
-                    <AiOutlineLink className="h-7 w-7  hover:scale-105 hover:text-black transition duration-500 ease-in-out" />
-                  </a>
+                <div className=" items-center justify-center w-full">
+                  <dt className=" mt-4 text-lg font-semibold leading-7 text-gray-900 flex justify-center items-center">
+                    <span>{spon.name}</span>
+                  </dt>
+                  <h3 className="text-gray-500  flex justify-center items-center">
+                    <span>{spon.designation}</span>
+                  </h3>
+                  <div className="mt-3 border border-gray-600 rounded-lg p-3 flex justify-between text-base leading-7 text-gray-600 ">
+                    <a href={spon.gitUrl}>
+                      <AiFillGithub className="h-7 w-7 hover:scale-105 hover:text-black transition duration-500 ease-in-out" />
+                    </a>
+                    <a href={spon.linkedInUrl}>
+                      <AiFillLinkedin className="h-7 w-7  hover:scale-105 hover:text-black transition duration-500 ease-in-out" />
+                    </a>
+                    <a href={spon.portfolioUrl}>
+                      <AiOutlineLink className="h-7 w-7  hover:scale-105 hover:text-black transition duration-500 ease-in-out" />
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}

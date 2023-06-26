@@ -32,7 +32,7 @@ const alumini = {
       name: "image",
       title: "Image",
       type: "image",
-      Options: { hotspot: true },
+      options: { hotspot: true },
       fields: [
         {
           name: "alt",

@@ -34,8 +34,6 @@ export async function getWad(): Promise<member[]> {
   );
 }
 
-
-
 export async function getAlumini(): Promise<member[]> {
   return client.fetch(
     groq`*[_type == "alumini"] | order(_createdAt asc){
@@ -99,6 +97,7 @@ export async function getMnc(): Promise<member[]> {
   );
 }
 
+//done
 export async function getPels(): Promise<member[]> {
   return client.fetch(
     groq`*[_type == "pels"] | order(_createdAt asc){
@@ -130,6 +129,7 @@ export async function getPublicity(): Promise<member[]> {
   );
 }
 
+//done
 export async function getRnd(): Promise<member[]> {
   return client.fetch(
     groq`*[_type == "rnd"] | order(_createdAt asc){
@@ -161,6 +161,7 @@ export async function getSponsorship(): Promise<member[]> {
   );
 }
 
+//done
 export async function getWie(): Promise<member[]> {
   return client.fetch(
     groq`*[_type == "wie"] | order(_createdAt asc){

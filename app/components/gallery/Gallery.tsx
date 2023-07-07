@@ -102,7 +102,7 @@ const Gallery = () => {
                         </div>
                     ))}
 
-                    {imagesLeft.map((image) => (
+                    {imagesRight.map((image) => (
                         <div id = "slide" className="flex justify-center my-[20px] mx-10">
                             <Image
                                 key = {image.id}

@@ -25,11 +25,11 @@ module.exports = {
             keyframes : {
                 scroll : {
                     "0%" : { transform : "translateY(0)" },
-                    "100%" : { transform : "translateY(calc(-400px * var(--leftLength)))" },
+                    "100%" : { transform : "translateY(calc(-360px * var(--leftLength)))" },
                 },
                 scrollReverse : {
                     "100%" : { transform : "translateY(0)" },
-                    "0%" : { transform : "translateY(calc(-400px * var(--rightLength)))" },
+                    "0%" : { transform : "translateY(calc(-360px * var(--rightLength)))" },
                 }
             },
         },

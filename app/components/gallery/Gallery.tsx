@@ -33,11 +33,11 @@ const Gallery = () => {
 
     return (
         <div className = "bg-primarybg text-white w-full h-[900px] flex flex-row">
-            <div id = "galleryHeader" className = "flex flex-col align-middle mx-32 w-1/3">
-                <h1 className = "font-sans text-6xl/[128px] font-bold">
+            <div id = "galleryHeader" className = "flex flex-col align-middle lg:mx-24 mx-12 w-1/3">
+                <h1 className = "font-sans font-bold lg:text-6xl/[128px] sm:text-4xl/[96px]">
                     Our Gallery
                 </h1>
-                <p className = "font-sans text-xl/[32px] font-base text-justify">
+                <p className = "font-sans lg:text-xl/[32px] sm:text-xs/[18px] font-base text-justify w-full">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi elementum et ante ac fringilla.
                     Pellentesque et felis metus. Cras facilisis ullamcorper magna et elementum. Vestibulum aliquet mi
                     quam, non imperdiet erat laoreet sit amet. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -62,7 +62,7 @@ const Gallery = () => {
                                 width = {360}
                                 height = {240}
                                 id= "image"
-                                className = "h-[360px]"
+                                className = "h-auto w-auto"
                             />
                         </div>
                     ))}
@@ -76,7 +76,7 @@ const Gallery = () => {
                                 width = {360}
                                 height = {240}
                                 id= "image"
-                                className = "h-[360px]"
+                                className = "h-auto w-auto"
                             />
                         </div>
                     ))}
@@ -97,7 +97,7 @@ const Gallery = () => {
                                 width = {360}
                                 height = {240}
                                 id= "image"
-                                className = "h-[360px]"
+                                className = "h-auto w-auto"
                             />
                         </div>
                     ))}
@@ -111,7 +111,7 @@ const Gallery = () => {
                                 width = {360}
                                 height = {240}
                                 id= "image"
-                                className = "h-[360px]"
+                                className = "h-auto w-auto"
                             />
                         </div>
                     ))}

@@ -1,3 +1,9 @@
+import Events from "./components/events/Events";
+
 export default async function Home() {
-  return <div></div>;
+  return (
+    <div>
+      <Events />
+    </div>
+  );
 }

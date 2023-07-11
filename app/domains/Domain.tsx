@@ -35,7 +35,7 @@ export default function Domain({
 					<dl className='grid grid-cols-1 gap-y-10 gap-x-8 md:max-w-xl lg:max-w-none lg:gap-y-16'>
 						{data.map((spon, key) => (
 							<div
-								className='relative rounded-lg bg-gray-50 p-10 flex justify-between items-center space-x-3'
+								className='relative rounded-lg bg-gradient-to-br from-[rgba(0,36,165,0.21)] to-[rgba(89,104,239,0.40)] p-10 flex justify-between items-center space-x-3'
 								key={spon._id}
 							>
 								<div>
@@ -57,10 +57,10 @@ export default function Domain({
 								</div>
 
 								<div className=' items-center justify-center w-full'>
-									<dt className=' mt-4 text-lg font-semibold leading-7 text-gray-900 flex justify-center items-center'>
-										<span>{spon.name}</span>
+									<dt className=' mt-4 text-lg font-bold leading-7 flex justify-center items-center'>
+										<span className='text-gray-300 font-bold'>{spon.name}</span>
 									</dt>
-									<h3 className='text-gray-500  flex justify-center items-center'>
+									<h3 className='text-gray-500 font-semibold  flex justify-center items-center'>
 										<span>{spon.designation}</span>
 									</h3>
 									<div className='mt-3 border border-gray-600 rounded-lg p-3 flex justify-between text-base leading-7 text-gray-600 '>

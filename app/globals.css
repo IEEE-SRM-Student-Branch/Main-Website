@@ -24,6 +24,7 @@ body {
     transform: rotateZ(180deg);
 }
 
+
 #carousel:hover {
     animation-play-state: paused;
 }

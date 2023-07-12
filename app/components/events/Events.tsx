@@ -60,7 +60,7 @@ export default function Events() {
             >
               <div className="absolute top-0 left-0 w-5 h-5 bg-[#030214] border-4 border-[#334576bf] rounded-full lg:left-1/2 lg:-translate-x-2"></div>
               <p
-                className={`text-lg lg:text-2xl font-medium tracking-wide text-blue-200 uppercase lg:w-1/2 lg:pr-12 lg:mt-10 mb-4 ${
+                className={`text-lg lg:text-2xl font-manrope font-medium tracking-wide text-blue-200 uppercase lg:w-1/2 lg:pr-12 lg:mt-10 mb-4 ${
                   index % 2 === 0 ? "lg:text-right" : "lg:text-left"
                 }`}
               >
@@ -84,11 +84,11 @@ export default function Events() {
                       layout="responsive"
                     />
                   </div>
-                  <h4 className="mt-6 pt-2 text-xl font-semibold text-white lg:mt-0 hover:underline ">
+                  <h4 className="mt-6 pt-2 text-xl font-semibold text-white lg:mt-0 hover:underline font-manrope ">
                     {item.title}
                   </h4>
                   {item.description && (
-                    <p className="mt-2 leading-7 text-blue-200 text-justify">
+                    <p className="mt-2 leading-7 text-blue-200 text-justify font-manrope">
                       {item.description}
                     </p>
                   )}
@@ -102,11 +102,11 @@ export default function Events() {
                       : "lg:text-left lg:pr-4 lg:mr-16 lg:pl-4"
                   }`}
                 >
-                  <h4 className="mt-2 text-xl font-semibold text-white lg:mt-0">
+                  <h4 className="mt-2 text-xl font-semibold text-white lg:mt-0 font-manrope">
                     {item.title}
                   </h4>
                   {item.description && (
-                    <p className="mt-2 leading-7 text-blue-200 text-justify">
+                    <p className="mt-2 leading-7 text-blue-200 text-justify font-manrope">
                       {item.description}
                     </p>
                   )}

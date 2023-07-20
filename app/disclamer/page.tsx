@@ -4,7 +4,7 @@ export default function page() {
   return (
     <>
     <div>
-    <div className="text-blue-500 lg:text-6xl text-4xl font-manrope text-center p-5 mt-2 lg:p-10">Disclaimer For IEEE SRM SB</div>
+    <div className="text-blue-500 lg:text-6xl text-4xl font-manrope text-center p-5  mt-4 mb-2 lg:p-10">Disclaimer For IEEE SRM SB</div>
     <div className='text-blue-200 text-center text-sm lg:text-2xl'>Approved by the IEEE-SRM Executive Committee</div>
     <div className='lg:text-lg text-white mx-[2rem] py-5 pl-2 lg:px-[13rem]'>
     <span className='underline underline-offset-1 font-semibold text-blue-500'>Interpretation and Definitions</span>

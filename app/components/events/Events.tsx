@@ -48,7 +48,7 @@ export default function Events() {
   ];
   return (
     <>
-      <div className="px-5 py-2">
+      <div className="px-5 py-2 bg-primarybg">
         <h1 className="text-4xl pt-4 pb-8 text-blue-200 text-center font-manrope font-bold ">
           Our Events
         </h1>

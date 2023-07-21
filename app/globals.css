@@ -4,5 +4,28 @@
 @tailwind utilities;
 
 body {
-  background-color: black;
+    background-color: black;
+}
+
+
+
+/*Gallery*/
+
+#carousel-container::before,
+#carousel-container::after {
+    background: linear-gradient(to top, rgba(3, 2, 20, 1) 0%, rgba(3, 2, 20, 1) 30%, rgba(3, 2, 20, 0) 100%);
+    content: '';
+    width: 100%;
+    position: absolute;
+    height: 10%;
+    z-index: 2;
+}
+
+#carousel-container::before {
+    transform: rotateZ(180deg);
+}
+
+
+#carousel:hover {
+    animation-play-state: paused;
 }

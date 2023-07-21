@@ -56,11 +56,19 @@ export default function Footer() {
                 Our Team
               </a>
             </li>
+            <li>
+              <a
+                className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75 font-manrope"
+                href="/disclamer"
+              >
+                Disclamer
+              </a>
+            </li>
 
             <li>
               <a
                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75 font-manrope"
-                href="/"
+                href="/privacy"
               >
                 Privacy Policy
               </a>
@@ -69,7 +77,7 @@ export default function Footer() {
             <li>
               <a
                 className="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75 font-manrope"
-                href="/"
+                href="/codeofconduct"
               >
                 Code of Conduct
               </a>
